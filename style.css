@@ -51,6 +51,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0;
 }
 
 .logo{
@@ -115,6 +116,9 @@ body{
     font-size: 48px;
     font-weight: 700;
     line-height: 58px;
+}
+
+#mt1{
     margin-top: 186px;
 }
 
@@ -133,21 +137,27 @@ body{
 
 .block_2_position{
     display: flex;
-    justify-content: space-evenly;
-    margin: 219px 0 217px 0;
+    justify-content: space-between;
+    
 }
 
 .block_left{
     background-image: url(img/red.svg);
-    
+    background-repeat: no-repeat;
+    height: 616px;
 }
 
-.block_left-text h3{
+.block_left-text{
+    margin-top: 219px;
+}
+
+.block_left-text p{
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 30px;
     font-weight: 600;
     line-height: 36px;
+
 }
 
 .subtitle_red{
@@ -159,3 +169,114 @@ body{
     line-height: 29px;
 }
 
+.block_right-text{
+    margin-top: 185px;
+}
+
+
+
+.subtitle_2{
+    margin-top: 48px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.module {
+    width: 150px;
+    height: 150px;
+    background: rgb(219, 27, 35);
+    position: relative;
+    margin: 20px 220px 20px 20px;
+    border-radius: 50%;
+    box-shadow: 
+      0 0 0 10px rgba(219, 27, 35, 0.4),
+      0 0 0 20px rgba(219, 27, 35, 0.6),
+      0 0 0 30px rgba(219, 27, 35, 0.5),
+      0 0 0 40px rgba(219, 27, 35, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.module i{
+    font-size: 75px;
+}
+
+.block_3{
+    height: 661px;
+    background: url(img/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.block_3_position{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+#mt2{
+    margin-top: 235px;
+}
+
+#mt3{
+    margin-top: 150px;
+}
+
+
+
+.project-position{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-video{
+    width: 386px;
+    height: 273px;
+    background: rgb(217, 217, 217);
+    border-radius: 21px;
+}
+
+.project-title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+.project-subtitle{
+    color: rgb(116, 116, 116);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-top: 10px;
+}
+
+.project-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+
+
+
+
+/* Media */
+
+@media (max-width: 1495px){
+    .container {
+        max-width: 1230px;  
+    }
+}
