@@ -275,9 +275,51 @@ body{
     margin-top: 48px;
 }
 
+.services_hr{
+    border: 1px solid rgb(61, 61, 61);
+    height: 1px;
+}
 
+#shr_margin{
+    margin-top: 48px;
+}
 
+.services_content{
 
+}
+
+.services_position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 27px 0 27px 0;
+}
+
+.services_title{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+}
+
+.services_number{
+    color: rgb(73, 73, 73);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-right: 37px;
+}
+
+.services_text{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+}
 
 /* Media */
 
