@@ -7,6 +7,10 @@
     margin: 0;
 }
 
+::selection {
+    background-color: rgb(219, 27, 35);
+}
+
 ::-webkit-scrollbar {
     width: 0;
   }
@@ -118,10 +122,6 @@ body{
     line-height: 58px;
 }
 
-#mt1{
-    margin-top: 186px;
-}
-
 .subtitle{
     margin-top: 32px;
     color: rgb(255, 255, 255);
@@ -221,6 +221,12 @@ body{
     align-items: flex-end;
     margin-bottom: 30px;
 }
+
+
+#mt1{
+    margin-top: 186px;
+}
+
 
 #mt2{
     margin-top: 235px;
