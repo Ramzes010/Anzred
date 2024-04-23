@@ -235,6 +235,10 @@ body{
     margin-top: 150px;
 }
 
+#mt4{
+    margin-top: 48px;
+}
+
 .project-position{
     margin-top: 48px;
     display: flex;
@@ -320,6 +324,10 @@ body{
     align-items: center;
 }
 
+.title_icon img{
+    cursor: pointer;
+}
+
 
 .team_flex{
     display: flex;
@@ -360,6 +368,74 @@ body{
     line-height: 18px;
     text-align: center;
     text-transform: capitalize;   
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 32px;
+}
+
+.answer {
+    display: none;
+    margin-top: 10px;
+    color: rgb(180, 180, 180);
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;  
+    margin-top: 16px;  
+}
+
+.expanded {
+    display: block;
+}
+
+.arrow{
+    transition: transform 0.3s ease;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.order_project{
+    box-sizing: border-box;
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 24px;
+    margin-top: 90px;
+}
+
+.order_project_flex{
+    display: flex;
+}
+
+.order_title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 63px;
+    font-weight: 700;
+    line-height: 77px;
+}
+
+.order_subtitle{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 24px;    
 }
 
 /* Media */
