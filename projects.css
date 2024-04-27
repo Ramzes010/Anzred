@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+}
+
+::selection {
+    background-color: rgb(219, 27, 35);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+:root{
+  
+}
+
+.container {
+    padding: 0 10px;
+    width: 100%;
+    max-width: 1230px;;
+    margin: 0 auto;    
+}
+
+.content {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.page{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-family: 'avantgarde', sans-serif;
+}
+
+body{
+    background-color: #0f0f0f;
+}
+
+.header-position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.logo{
+    margin-right: 70px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 32px;
+    transition: all .15s ease;
+}
+
+.link:hover{
+    color: rgb(219, 27, 35);
+    transition: all .15s ease;
+}
+
+.link-price{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 16px 32px 16px 32px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 29px;
+    transition: all .15s ease;
+}
+
+.link-price:hover{
+    background-color:rgb(219, 27, 35) ;
+    border: 1px solid rgb(219, 27, 35);
+    transition: all .15s ease;
+}
+
+.link-price:active{
+    background-color: rgb(175, 9, 16);
+    border: 1px solid rgb(175, 9, 16);
+    transition: all .15s ease;
+}
+
+.title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+#mt1{
+    margin: 48px;
+}
+
+.project_links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-link{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 54px;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 12px 24px 12px 24px;
+    margin:0 0 16px 10px;
+}
+
+.project-link:hover{
+    background: rgb(219, 27, 35);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(219, 27, 35);
+}
+
+.active{
+    background: rgb(219, 27, 35);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(219, 27, 35);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 12px 24px 12px 24px;
+}
+
+.project-position{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-video{
+    width: 386px;
+    height: 273px;
+    background: rgb(217, 217, 217);
+    border-radius: 21px;
+}
+
+.project-title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+.project-subtitle{
+    color: rgb(116, 116, 116);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    margin-top: 10px;
+}
+
+.project-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+footer{
+    margin-top: 150px;
+    border-top: 1px solid;
+    border-top: 1px solid rgb(61, 61, 61);
+    padding: 70px 0 90px 0;
+}
+
+.footer_position{
+    display: flex;
+    align-items: flex-start
+}
+
+.footer_position .logo{
+    margin-right: 215px;
+}
+
+.footer_content{
+    margin-right: 115px;
+}
+
+.footer_title{
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;    
+}
+
+.footer_subtitle{
+    color: rgb(130, 130, 130);
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 24px;    
+}
+
+.footer_img{
+    margin: 24px 16px 0px 0px;
+    cursor: pointer;
+}

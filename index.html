@@ -398,17 +398,19 @@
                                     вас проконсультируем.</h3>
                             </div>
                             <div class="order_book">
-                                <input type="text" class="order_input" type="name">
-                                <div class="phone-input">
-                                    <select id="country-code">
-                                        <option value="+1">Usa (+1)</option>
-                                        <option value="+44">Uk (+44)</option>
-                                        <option value="+49">Ger (+49)</option>
-                                    </select>
-                                    <input type="tel" id="phone-number" placeholder="(999) 999-99-99">
+                                <div class="order_inputs">   
+                                    <input class="order_input" type="text" class="order_input" type="name" placeholder="name">
+                                    <input class="order_input" type="tel" id="phone-number" placeholder="(999) 999-99-99">
+                                    <input class="order_input" type="text" class="order_input" placeholder="E-mail">
                                 </div>
-                                
-                                <input type="text" class="order_input">
+                                <div class="order_agreement">
+                                    <a href="#" class="order_link" id="activateButton" disabled>Отправить</a>
+                                    <div class="ImagineContainer" onclick="changeImage()">
+                                        <img id="mainImage" src="img/icons/checkbox_none.svg" class="order_checkbox">
+                                    </div>
+                                    <h5 class="order_text">Я согласен с<u>обработкой своих персональных данных <br>
+                                        и договором публичной оферты.</u></h5>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -417,10 +419,36 @@
         </div>
     </section>
 
-    
-
-
-
+    <footer>
+        <div class="page">
+            <div class="container">
+                <div class="content">
+                    <div class="footer_position">
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="">
+                        </div>
+                        <div class="footer_content">
+                            <h3 class="footer_title">Контакты</h3>
+                            <h2 class="footer_subtitle">Anzored@gmail.com</h3>
+                            <h2 class="footer_subtitle">+7(938)000-08-90</h3>
+                        </div>
+                        <div class="footer_content">
+                            <h3 class="footer_title">Офис</h3>
+                            <h2 class="footer_subtitle">ул. Назарбаева 11</h3>
+                            <h2 class="footer_subtitle">г. Грозный</h3>
+                        </div>
+                        <div class="footer_content">
+                            <h3 class="footer_title">Подпишись</h3>
+                            <img class="footer_img" src="img/icons/insta.svg" alt="">
+                            <img class="footer_img" src="img/icons/tele.svg" alt="">
+                            <img class="footer_img" src="img/icons/Share (2).svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
+    
 </body>
 </html>

@@ -21,3 +21,31 @@ document.getElementById('country-code').addEventListener('change', function(){
     const selectedCode = this.value;
     document.getElementById('phone-number').setAttribute('placeholder', selectedCode + '999-99-99');
 });
+
+document.getElementById("imageContainer").addEventListener("click", changeImage);
+
+document.getElementById("imageContainer").addEventListener("click", changeImage);
+
+function changeImage() {
+    var mainImage = document.getElementById("mainImage");
+    var activateButton = document.getElementById("activateButton");
+    if (mainImage.src.match("img/icons/checkbox_none.svg")) {
+        mainImage.src = "img/icons/checkbox.svg";
+        mainImage.alt = "img/icons/checkbox";
+    } else {
+        mainImage.src = "img/icons/checkbox_none.svg";
+        mainImage.alt = "img/icons/checkbox_none";
+    }
+    if (activateButton.classList.contains("order_link")) {
+        activateButton.classList.remove("order_link");
+        activateButton.classList.add("order_link_active");
+    } else {
+        activateButton.classList.remove("order_link_active");
+        activateButton.classList.add("order_link");
+    }
+    activateButton.disabled = false;
+}
+
+// Анимация для section
+
+
