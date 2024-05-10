@@ -18,10 +18,10 @@
                             <div class="logo">
                                 <img src="img/logo.svg" alt="">
                             </div>
-                            <a href="#" class="link">Главная</a>
+                            <a href="index.html" class="link">Главная</a>
                             <a href="#" class="link">Услуги</a>
-                            <a href="#" class="link">Курсы</a>
-                            <a href="#" class="link">Проекты</a>
+                            <a href="coursers.html" class="link">Курсы</a>
+                            <a href="projects.html" class="link">Проекты</a>
                             <a href="#" class="link">Контакты</a>
                         </div>
 
@@ -40,18 +40,24 @@
                     <h1 class="title" id="mt1">Проекты</h1>
                     <div class="project_links" id="mt1">
                         <a href="#" class="project-link active">Бизнес</a>
-                        <a href="#" class="project-link">Графика FVX</a>
-                        <a href="#" class="project-link">Медицина</a>
-                        <a href="#" class="project-link">Мероприятие</a>
-                        <a href="#" class="project-link">Мода</a>
-                        <a href="#" class="project-link">Образование</a>
-                        <a href="#" class="project-link">Общепит</a>
-                        <a href="#" class="project-link">Недвижимость</a>
-                        <a href="#" class="project-link">Отели</a>
-                        <a href="#" class="project-link">Развлечение</a>
-                        <a href="#" class="project-link">Спорт</a>
-                        <a href="#" class="project-link">Юмор</a>
+                        <a href="#" class="project-link" id="modalBtn">Графика FVX</a>
+                        <a href="#" class="project-link" id="modalBtn">Медицина</a>
+                        <a href="#" class="project-link" id="modalBtn">Мероприятие</a>
+                        <a href="#" class="project-link" id="modalBtn">Мода</a>
+                        <a href="#" class="project-link" id="modalBtn">Образование</a>
+                        <a href="#" class="project-link" id="modalBtn">Общепит</a>
+                        <a href="#" class="project-link" id="modalBtn">Недвижимость</a>
+                        <a href="#" class="project-link" id="modalBtn">Отели</a>
+                        <a href="#" class="project-link" id="modalBtn">Развлечение</a>
+                        <a href="#" class="project-link" id="modalBtn">Спорт</a>
+                        <a href="#" class="project-link" id="modalBtn">Юмор</a>
                     </div>
+
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                          <span id="modalText">Данная функция недоступна!</span>
+                        </div>
+                      </div>
 
                     <div class="project-position">
                         <div class="project">
@@ -178,5 +184,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="modal.js"></script>
 </body>
 </html>

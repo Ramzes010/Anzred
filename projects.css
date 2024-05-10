@@ -23,10 +23,6 @@ p {
     margin: 0 0 10px;
 }
 
-:root{
-  
-}
-
 .container {
     padding: 0 10px;
     width: 100%;
@@ -115,7 +111,7 @@ body{
 }
 
 #mt1{
-    margin: 48px;
+    margin-top: 48px;
 }
 
 .project_links{
@@ -134,12 +130,14 @@ body{
     background: rgba(255, 255, 255, 0.06);
     padding: 12px 24px 12px 24px;
     margin:0 0 16px 10px;
+    transition: all .15s ease;
 }
 
 .project-link:hover{
     background: rgb(219, 27, 35);
     color: rgb(255, 255, 255);
     border: 1px solid rgb(219, 27, 35);
+    transition: all .15s ease;
 }
 
 .active{
@@ -231,3 +229,39 @@ footer{
     margin: 24px 16px 0px 0px;
     cursor: pointer;
 }
+
+
+/* Модальное окно */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 150px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #1E1E1E;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 15%;
+    height: 200px;
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  #modalText {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }

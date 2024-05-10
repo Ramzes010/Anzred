@@ -1,3 +1,22 @@
+
+// Анимация для section
+const blocks = document.querySelectorAll('#block_animation');
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+          } else {
+            entry.target.classList.remove('animated');
+          }
+        });
+      });
+
+      blocks.forEach(block => {
+        observer.observe(block);
+      });
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const questions = document.querySelectorAll(".question");
 
@@ -45,7 +64,4 @@ function changeImage() {
     }
     activateButton.disabled = false;
 }
-
-// Анимация для section
-
 
