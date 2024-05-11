@@ -631,3 +631,60 @@ footer{
     transform: translateY(0);
   }
   
+/* Webkit */
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+
+    .about-content-text{
+        max-width: 500px;
+    }
+    .container {
+        max-width: 830px;;   
+    }
+    
+}
+
+@media (max-width: 1300px) {
+    .container {
+        max-width: 1030px;;   
+    }
+}
+
+@media (max-width: 1000px) {
+    .links a, .price{
+        display: none;
+    }
+
+    .container {
+        max-width: 700px;;   
+    }
+
+    .block_2_position{
+        flex-direction: column;
+    }
+
+    .block_left {
+        background-image: none;
+        height: auto;
+    }
+
+    .block_left-text {
+        margin-top: 70px;
+    }
+
+    .block_right-text {
+        margin-top: 0;
+    }
+    
+    .subtitle {
+        margin: 48px 0 70px 0;
+    }
+
+    .subtitle br{
+        display: none;
+    }
+    
+}
