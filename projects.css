@@ -129,7 +129,7 @@ body{
     border-radius: 54px;
     background: rgba(255, 255, 255, 0.06);
     padding: 12px 24px 12px 24px;
-    margin:0 0 16px 10px;
+    margin:0 10px 16px 0;
     transition: all .15s ease;
 }
 
