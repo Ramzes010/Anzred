@@ -65,3 +65,5 @@ function changeImage() {
     activateButton.disabled = false;
 }
 
+
+
