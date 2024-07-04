@@ -1,6 +1,7 @@
 
 // Анимация для section
 const blocks = document.querySelectorAll('#block_animation');
+const menuIcon = document.querySelector('.menu-icon');
 
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -65,3 +66,15 @@ function changeImage() {
     activateButton.disabled = false;
 }
 
+
+
+
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('rotated');
+
+    if (menuIcon.classList.contains('rotated')) {
+        menuIcon.src = 'img/icons/mMenu2.svg';
+    } else {
+        menuIcon.src = 'img/icons/mMenu.svg';
+    }
+});

@@ -105,9 +105,20 @@ body{
     border: 1px solid rgb(175, 9, 16);
     transition: all .15s ease;
 }
-
+/*  */
 .mMenu{
     display: none;
+    cursor: pointer;
+}
+/*  */
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon.rotated {
+    transform: rotate(180deg);
 }
 
 
