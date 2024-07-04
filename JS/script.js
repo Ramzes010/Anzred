@@ -67,14 +67,3 @@ function changeImage() {
 }
 
 
-
-
-// menuIcon.addEventListener('click', () => {
-//     menuIcon.classList.toggle('rotated');
-
-//     if (menuIcon.classList.contains('rotated')) {
-//         menuIcon.src = 'img/icons/mMenu2.svg';
-//     } else {
-//         menuIcon.src = 'img/icons/mMenu.svg';
-//     }
-// });
