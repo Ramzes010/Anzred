@@ -258,6 +258,10 @@ body{
     margin-top: 48px;
 }
 
+.project{
+    margin-bottom: 32px;
+}
+
 .project-position{
     margin-top: 48px;
     display: flex;
