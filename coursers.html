@@ -55,19 +55,61 @@
     <aside>
         <div class="container">
             <div class="content">
-                <div class="filter">
-                    <div class="filter__type">
-                        <h4 class="filter__type__title">Тип обучения на платформе</h4>
+                <div class="filter-container">
+                    <!-- Тип обучения -->
+                    <div class="filter-section">
+                      <h3 class="filter-title">Тип обучения</h3>
+                      <div class="filter-buttons">
                         <label class="radio-button">
-                            <input type="radio" name="my-radio">
-                            <span class="radio-button-wrapper"></span>
-                          </label>
+                          <input type="radio" name="learning-type" checked>
+                          <span class="radio-button-wrapper"></span>
+                          Онлайн
+                        </label>
+                        <label class="radio-button">
+                          <input type="radio" name="learning-type">
+                          <span class="radio-button-wrapper"></span>
+                          Оффлайн
+                        </label>
+                      </div>
                     </div>
-                </div>
+                    <hr class="filter-divider">
+                  
+                    <!-- Уровень сложности -->
+                    <div class="filter-section">
+                      <h3 class="filter-title">Уровень сложности</h3>
+                      <div class="filter-buttons">
+                        <label class="radio-button">
+                          <input type="radio" name="difficulty-level" checked>
+                          <span class="radio-button-wrapper"></span>
+                          База
+                        </label>
+                        <label class="radio-button">
+                          <input type="radio" name="difficulty-level">
+                          <span class="radio-button-wrapper"></span>
+                          Pro
+                        </label>
+                      </div>
+                    </div>
+                    <hr class="filter-divider">
+                  
+                    <!-- Длительность -->
+                    <div class="filter-section">
+                        <h3 class="filter-title">Длительность</h3>
+                    <div class="filter-duration">
+                    <span id="duration-start">1 месяц</span>
+                    <div class="range-slider">
+                        <input type="range" id="duration-start-slider" min="1" max="24" value="1" disabled>
+                        <input type="range" id="duration-end-slider" min="1" max="24" value="24">
+                    </div>
+                    <span id="duration-end">24 месяца</span>
+                      </div>
+                    </div>
+                  </div>
+                  
             </div>
         </div>
         
     </aside>
-
+<script src="JS/aside.js"></script>
 </body>
 </html>
