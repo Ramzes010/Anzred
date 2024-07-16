@@ -373,6 +373,30 @@ body{
     background: rgb(217, 217, 217);
 }
 
+.team_video__person{
+    width: 249px;
+    height: 252px;
+    border-radius: 9.2px;
+    backdrop-filter: blur(18.76px);
+    background: rgb(217, 217, 217);
+}
+
+.team_video__person--anzor {
+    background-image: url("img/Person_1.png");
+  }
+  
+  .team_video__person--vakha {
+    background-image: url("img/Person_2.png");
+  }
+  
+  .team_video__person--umar {
+    background-image: url("img/Person_3.png");
+  }
+  
+  .team_video__person--islam {
+    background-image: url("img/person_4.png");
+  }
+
 .team_title{
     margin-top: 20px;
     color: rgb(255, 255, 255);
