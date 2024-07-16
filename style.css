@@ -808,6 +808,14 @@ footer{
     .order_agreement a{
         padding: 16px 60px;
     }
+
+    .team_video__person {
+        width: 249px;
+        height: 252px;
+        border-radius: 9.2px;
+        backdrop-filter: blur(18.76px);
+        background: rgb(217, 217, 217);
+    }
 }
 
 @media (max-width: 1000px) {
