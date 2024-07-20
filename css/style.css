@@ -352,72 +352,14 @@ body{
     cursor: pointer;
 }
 
+/* team */
 
-.team_flex{
+.team__container{
     display: flex;
-    justify-content: space-around;
+    justify-content: ;
 }
 
-.team_container{
-    margin-top: 48px;
-    border: 1px solid rgb(36, 36, 36);
-    border-radius: 10.8px;
-    padding: 20px;
-}
-
-.team_video{
-    width: 249px;
-    height: 252px;
-    border-radius: 7.2px;
-    backdrop-filter: blur(18.76px);
-    background: rgb(217, 217, 217);
-}
-
-.team_video__person{
-    width: 249px;
-    height: 252px;
-    border-radius: 9.2px;
-    backdrop-filter: blur(18.76px);
-    background: rgb(217, 217, 217);
-}
-
-.team_video__person--anzor {
-    background-image: url("img/Person_1.png");
-  }
-  
-  .team_video__person--vakha {
-    background-image: url("img/Person_2.png");
-  }
-  
-  .team_video__person--umar {
-    background-image: url("img/Person_3.png");
-  }
-  
-  .team_video__person--islam {
-    background-image: url("img/person_4.png");
-  }
-
-.team_title{
-    margin-top: 20px;
-    color: rgb(255, 255, 255);
-    font-family: Inter;
-    font-size: 23px;
-    font-weight: 600;
-    line-height: 28px;
-    text-align: center;
-    text-transform: capitalize;    
-}
-.team_subtitle{
-    margin-top: 12px;
-    color: rgb(123, 123, 123);
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-    text-transform: capitalize;   
-}
-
+/* team */
 .faq-item {
     margin-bottom: 20px;
 }
