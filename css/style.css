@@ -348,6 +348,10 @@ body{
     align-items: center;
 }
 
+.title_icon{
+
+}
+
 .title_icon img{
     cursor: pointer;
 }
@@ -356,7 +360,47 @@ body{
 
 .team__container{
     display: flex;
-    justify-content: ;
+    margin-top: 50px;
+    gap: 20px;
+
+    position: relative;
+    overflow-x: auto; /* Оставить горизонтальную прокрутку */
+    -ms-overflow-style: none; /* Убрать скроллбар в IE и Edge */
+    scrollbar-width: none; /* Убрать скроллбар в Firefox */
+    white-space: nowrap; /* Запретить перенос строк */
+}
+
+.container::-webkit-scrollbar {
+    display: none; /* Убрать скроллбар в Chrome, Safari и Opera */
+  }
+
+.team__container__block{
+    background: #0F0F0F;
+    border-radius: 10.804px;
+    border: 1px solid #242424;
+
+    flex: 0 0 300px; /* Запретить растяжение/сжатие блоков */
+    display: inline-block;
+}
+
+.team__container__title{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 23px; 
+    font-weight: 600;   
+}
+
+.team__container__subtitle{
+    color: #7B7B7B;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;    
+}
+
+.team__container__block img{
+    padding: 20px;
 }
 
 /* team */
@@ -651,6 +695,16 @@ footer{
 }
 
 @media (max-width: 1300px) {
+
+    .team__container{
+        width: 1000px;
+    }
+
+    .team__container__block{
+        flex: 0 0 250px;
+    }
+
+
     .container {
         max-width: 840px;
     }
@@ -776,6 +830,15 @@ footer{
 }
 
 @media (max-width: 1000px) {
+
+    .team__container{
+        width: 100%;
+    }
+
+    .team__container__block{
+        flex: 0 0 200px;
+    }
+
     .links a, .price{
         display: none;
     }
@@ -970,8 +1033,9 @@ footer{
         padding: 16px 80px;
     }
 
-    .title_icon{
-        display: none;
+    .title_icon img{
+        width: 46px;
+        height: 46px;
     }
 
     .order_agreement{
