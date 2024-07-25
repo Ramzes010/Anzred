@@ -23,10 +23,6 @@ p {
     margin: 0 0 10px;
 }
 
-:root{
-  
-}
-
 .container {
     padding: 0 10px;
     width: 100%;
@@ -875,6 +871,11 @@ footer{
     .subtitle br{
         display: none;
     }
+
+    .block_4{
+        margin-top: 80px;
+    }
+
     .block_3_position{
         flex-direction: column;
         align-items: normal;
@@ -926,6 +927,7 @@ footer{
         height: 100px;
         position: relative;
         top: 100px;
+        left: 50px;
         z-index: 11;
     }
 
