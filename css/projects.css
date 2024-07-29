@@ -308,6 +308,44 @@ footer{
     .title{
         font-size: 40px;
     }
+
+    .footer_position {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer_title{
+        font-family: Arial;
+        font-size: 18px;       
+    }
+
+    .footer_subtitle{
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 16px;
+    }
+
+    .logo{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .icons_adaptive{
+        margin-left: 100px;
+    }
+
+    .footer_content{
+        display: none;
+    }
+
+    .footer_content_mobile{
+        display: flex;
+    }
+
+    .footer_content2{
+        margin: 10px 30px 0 0;
+    }
 }
 
 @media (max-width: 900px) {
@@ -341,6 +379,8 @@ footer{
         display: flex;
         flex-wrap: wrap;
     }
+
+
 }
 
 @media (max-width: 600px) {
