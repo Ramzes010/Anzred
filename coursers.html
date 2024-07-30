@@ -63,16 +63,16 @@
                         <label class="radio-button">
                           <input type="radio" name="learning-type" checked>
                           <span class="radio-button-wrapper"></span>
-                          Онлайн
+                          <p class="radio__text">Онлайн</p>
                         </label>
                         <label class="radio-button">
                           <input type="radio" name="learning-type">
                           <span class="radio-button-wrapper"></span>
-                          Оффлайн
+                          <p class="radio__text">Оффлайн</p>
                         </label>
                       </div>
                     </div>
-                    <hr class="filter-divider">
+                    <div class="hr"></div>
                   
                     <!-- Уровень сложности -->
                     <div class="filter-section">
@@ -81,30 +81,32 @@
                         <label class="radio-button">
                           <input type="radio" name="difficulty-level" checked>
                           <span class="radio-button-wrapper"></span>
-                          База
+                          <p class="radio__text">База</p>
                         </label>
                         <label class="radio-button">
                           <input type="radio" name="difficulty-level">
                           <span class="radio-button-wrapper"></span>
-                          Pro
+                          <p class="radio__text">Pro</p>
                         </label>
                       </div>
                     </div>
-                    <hr class="filter-divider">
+                    <div class="hr"></div>
                   
                     <!-- Длительность -->
-                    <div class="filter-section">
-                        <h3 class="filter-title">Длительность</h3>
-                    <div class="filter-duration">
-                    <span id="duration-start">1 месяц</span>
-                    <div class="range-slider">
-                        <input type="range" id="duration-start-slider" min="1" max="24" value="1" disabled>
-                        <input type="range" id="duration-end-slider" min="1" max="24" value="24">
+                    <div class="range-container">
+                        <div class="range-values">
+                            <span id="minValue">0</span> - <span id="maxValue">24</span>
+                        </div>
+                        <input type="range" id="rangeMin" min="0" max="100" value="0" step="1" oninput="updateRange()">
+                        <input type="range" id="rangeMax" min="0" max="100" value="100" step="1" oninput="updateRange()">
+                        <div class="slider" id="slider">
+                            <div class="track"></div>
+                            <div class="range"></div>
+                            <div class="thumb left"></div>
+                            <div class="thumb right"></div>
+                        </div>
+                        
                     </div>
-                    <span id="duration-end">24 месяца</span>
-                      </div>
-                    </div>
-                  </div>
                   
             </div>
         </div>

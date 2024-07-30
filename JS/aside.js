@@ -1,14 +1,71 @@
-const durationStartSlider = document.getElementById('duration-start-slider');
-const durationEndSlider = document.getElementById('duration-end-slider');
-const durationStartLabel = document.getElementById('duration-start');
-const durationEndLabel = document.getElementById('duration-end');
+function updateRange() {
+  const rangeMin = document.getElementById('rangeMin');
+  const rangeMax = document.getElementById('rangeMax');
+  const minValue = document.getElementById('minValue');
+  const maxValue = document.getElementById('maxValue');
+  const range = document.querySelector('.range');
+  const thumbLeft = document.querySelector('.thumb.left');
+  const thumbRight = document.querySelector('.thumb.right');
 
-function updateDurationLabels() {
-  durationStartLabel.textContent = `${durationStartSlider.value} месяц${durationStartSlider.value !== '1' ? 'а' : ''}`;
-  durationEndLabel.textContent = `${durationEndSlider.value} месяц${durationEndSlider.value !== '1' ? 'а' : ''}`;
+  let min = parseInt(rangeMin.value);
+  let max = parseInt(rangeMax.value);
+
+  if (min > max) {
+      [min, max] = [max, min];
+  }
+
+  minValue.textContent = min;
+  maxValue.textContent = max;
+
+  const minPercent = (min / rangeMin.max) * 100;
+  const maxPercent = (max / rangeMax.max) * 100;
+
+  range.style.left = minPercent + '%';
+  range.style.right = (100 - maxPercent) + '%';
+
+  thumbLeft.style.left = minPercent + '%';
+  thumbRight.style.left = maxPercent + '%';
 }
 
-durationStartSlider.addEventListener('input', updateDurationLabels);
-durationEndSlider.addEventListener('input', updateDurationLabels);
+function attachThumbEvents() {
+  const thumbLeft = document.querySelector('.thumb.left');
+  const thumbRight = document.querySelector('.thumb.right');
+  const slider = document.getElementById('slider');
 
-updateDurationLabels();
+  thumbLeft.addEventListener('mousedown', function(event) {
+      event.preventDefault();
+      document.addEventListener('mousemove', moveLeftThumb);
+      document.addEventListener('mouseup', function() {
+          document.removeEventListener('mousemove', moveLeftThumb);
+      });
+  });
+
+  thumbRight.addEventListener('mousedown', function(event) {
+      event.preventDefault();
+      document.addEventListener('mousemove', moveRightThumb);
+      document.addEventListener('mouseup', function() {
+          document.removeEventListener('mousemove', moveRightThumb);
+      });
+  });
+
+  function moveLeftThumb(event) {
+      const sliderRect = slider.getBoundingClientRect();
+      const newPercent = ((event.clientX - sliderRect.left) / sliderRect.width) * 100;
+      const rangeMin = document.getElementById('rangeMin');
+      rangeMin.value = Math.min(newPercent, parseInt(document.getElementById('rangeMax').value) - 1);
+      updateRange();
+  }
+
+  function moveRightThumb(event) {
+      const sliderRect = slider.getBoundingClientRect();
+      const newPercent = ((event.clientX - sliderRect.left) / sliderRect.width) * 100;
+      const rangeMax = document.getElementById('rangeMax');
+      rangeMax.value = Math.max(newPercent, parseInt(document.getElementById('rangeMin').value) + 1);
+      updateRange();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  updateRange();
+  attachThumbEvents();
+});
