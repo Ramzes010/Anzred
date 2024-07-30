@@ -271,11 +271,13 @@ input[type="range"] {
     position: absolute;
     width: 20px;
     height: 20px;
-    border:  5px double #ff0000 ;
-    background-color: #ddd;
-    border-radius: 50%;
     cursor: pointer;
     top: -9px;
+
+    
+    background-color: black;
+    border-radius: 50%;
+    
   }
 
 .range-values {
