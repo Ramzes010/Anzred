@@ -805,23 +805,8 @@ footer{
         padding: 16px 60px;
     }
 
-    /* .team_video__person {
-        width: 249px;
-        }
-
-        .team_video__person--anzor,
-        .team_video__person--vakha,
-        .team_video__person--umar,
-        .team_video__person--islam{
-            width: auto;
-        } */
-
         .swiper-slide .team_container{
             width: 249px;
-        }
-
-        .team_video__person{
-            /* margin-right: 30px; */
         }
 }
 
@@ -1091,31 +1076,14 @@ footer{
   
 .swiper-slide.team_video__person,
 .swiper-slide.team_video__person--umar {
-  margin-right: 16px; /* Отступ справа 16px */
-  padding: 16px; /* Внутренний отступ 16px */
+  margin-right: 16px; 
+  padding: 16px; 
 }
 
 @media (min-width: 1300px) {
   .swiper-slide.team_video__person,
   .swiper-slide.team_video__person--umar {
-    margin-right: 24px; /* Отступ справа 24px */
-    padding: 24px; /* Внутренний отступ 24px */
+    margin-right: 24px; 
+    padding: 24px; 
   }
 }
-
-/* .team_video__person,
-.team_video__person--umar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.team_video__person img,
-.team_video__person--umar img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-} */
