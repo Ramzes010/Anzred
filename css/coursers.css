@@ -140,8 +140,8 @@ body{
 .block__catalog__links a:hover{
     color:  #70777A;
     background: #EBEBEB;
-    border: none;
-}
+    border: 1px solid #EBEBEB;
+  }
 
 .filter-container {
     width: 300px;

@@ -687,6 +687,11 @@ footer{
     .container {
         max-width: 830px;;   
     }
+
+    .logo img{
+        width: 65px;
+        height: 65px;
+    }
     
 }
 
@@ -811,6 +816,11 @@ footer{
 }
 
 @media (max-width: 1000px) {
+
+    .logo img{
+        width: 55px;
+        height: 55px;
+    }
 
     .team__container{
         width: 100%;
