@@ -9,29 +9,42 @@
 </head>
 <body>
     
-    <header>
+    <header id="block_animation">
         <div class="page">
             <div class="container">
                 <div class="content">
                     <div class="header-position">
                         <div class="links">
                             <div class="logo">
-                                <img src="img/logo.svg" alt="">
+                                <img src="img/logo.svg" alt="img/logo">
                             </div>
                             <a href="index.html" class="link">Главная</a>
-                            <a href="index.html#services" class="link">Услуги</a>
+                            <a href="#services" class="link">Услуги</a>
                             <a href="coursers.html" class="link">Курсы</a>
                             <a href="projects.html" class="link">Проекты</a>
-                            <a href="#block_animation" class="link">Контакты</a>
+                            <a href="#footer" class="link">Контакты</a>
                         </div>
-                            
                         <div class="price">
                             <a href="#" class="link-price">Стоимость</a>
                         </div>
+                        
+
+                        <div class="mMenu" onclick="toggleMenu()">
+                            <img src="img/icons/mMenu.svg" alt="img/icons/mMenu" class="menu-icon" id="menuIcon">
+                        </div>
                     </div>
+                    <div class="mobile-menu" id="mobileMenu">
+                        <a href="index.html" class="link">Главная</a>
+                        <a href="#services" class="link">Услуги</a>
+                        <a href="coursers.html" class="link">Курсы</a>
+                        <a href="projects.html" class="link">Проекты</a>
+                        <a href="#footer" class="link">Контакты</a>
+                    </div>
+
                 </div>
             </div>
         </div>
+        
     </header>
     <main>
         <div class="container">
@@ -197,5 +210,6 @@
         </footer>
     
 <script src="JS/aside.js"></script>
+<script src="JS/mMenu.js"></script>
 </body>
 </html>

@@ -26,17 +26,27 @@
                             <a href="projects.html" class="link">Проекты</a>
                             <a href="#footer" class="link">Контакты</a>
                         </div>
-
                         <div class="price">
                             <a href="#" class="link-price">Стоимость</a>
                         </div>
-                        <div class="mMenu">
-                            <img src="img/icons/mMenu.svg" alt="img/icons/mMenu" class="menu-icon">
+                        
+
+                        <div class="mMenu" onclick="toggleMenu()">
+                            <img src="img/icons/mMenu.svg" alt="img/icons/mMenu" class="menu-icon" id="menuIcon">
                         </div>
                     </div>
+                    <div class="mobile-menu" id="mobileMenu">
+                        <a href="index.html" class="link">Главная</a>
+                        <a href="#services" class="link">Услуги</a>
+                        <a href="coursers.html" class="link">Курсы</a>
+                        <a href="projects.html" class="link">Проекты</a>
+                        <a href="#footer" class="link">Контакты</a>
+                    </div>
+
                 </div>
             </div>
         </div>
+        
     </header>
 
     <section class="block_1" id="block_animation">
@@ -490,6 +500,7 @@
     <script src="JS/script.js"></script>
     <script src="JS/swipe.js"></script>
     <script src="JS/anchor.js"></script>
+    <script src="JS/mMenu.js"></script>
     
 </body>
 </html>
