@@ -7,10 +7,6 @@
     margin: 0;
 }
 
-::selection {
-    background-color: rgb(219, 27, 35);
-}
-
 ::-webkit-scrollbar {
     width: 0;
   }
